@@ -20,7 +20,7 @@ class WebPageAutomator:
         driver = webdriver.Chrome("directory of chromedriver\\chromedriver.exe")
         driver.get(URL)
         driver.maximize_window()
-        with open("name_key.txt", "r+") as fo:
+        with open("Input_info.txt", "r+") as fo:
             context = fo.read()
             context2 = context.split("\n")
             counter = len(context2)
